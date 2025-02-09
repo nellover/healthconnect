@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import Appointment from "./pages/Appointment";
 import NotFound from "./pages/NotFound";
+import Dashboard from "../src/Dashboard/Dashboard";
 import "./styles/global.css";
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/appointment/:id" element={<Appointment />} />
+
+        {/* Add new route for Dashboard */}
+        <Route path="/dashboard" element={<Dashboard />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
